@@ -1,0 +1,12 @@
+services:
+  dagster:
+    build:
+      context: .                    # Root of your project
+      dockerfile: .docker/Dockerfile  # Path to Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./sports_betting_pipeline:/dagster_project/sports_betting_pipeline
+      - ./.docker/dagster_home:/dagster_project/.docker/dagster_home
+    environment:
+      DAGSTER_HOME: /dagster_project/.docker/dagster_home

@@ -1,0 +1,37 @@
+
+# Byte-compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+.venv/
+*.env
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Docker files
+.docker/dagster_home/
+*.pid
+*.log
+
+# Secrets and credentials
+aws_credentials.json
+.env
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+*.swp
+
+# Dagster telemetry (optional)
+.docker/dagster_home/.telemetry/

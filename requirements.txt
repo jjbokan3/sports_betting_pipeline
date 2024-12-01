@@ -1,0 +1,5 @@
+dagster
+dagit
+pandas
+google-cloud-bigquery
+boto3
