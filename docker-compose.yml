@@ -8,5 +8,8 @@ services:
     volumes:
       - ./sports_betting_pipeline:/dagster_project/sports_betting_pipeline
       - ./.docker/dagster_home:/dagster_project/.docker/dagster_home
+      - ~/.dbt:/root/.dbt
+      - ~/.gcp/dbt-key.json:/dagster_project/dbt-key.json
     environment:
       DAGSTER_HOME: /dagster_project/.docker/dagster_home
+      GOGLE_APPLICATION_CREDENTIALS: /dagster_project/dbt-key.json

@@ -1,0 +1,5 @@
+[default]
+destination = "bigquery"
+
+[bigquery]
+credentials = "/dagster_project/dbt-key.json"

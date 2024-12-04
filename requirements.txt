@@ -3,3 +3,5 @@ dagit
 pandas
 google-cloud-bigquery
 boto3
+dbt-bigquery
+dlt
